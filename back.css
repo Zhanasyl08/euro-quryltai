@@ -1,0 +1,99 @@
+body {
+    background-image: url("./image/background.png");
+ 
+}
+.section_main_head_logo {
+    display: flex;
+    margin-left: 110px;
+    margin-top: 14px;
+    height: 100px;
+    width:150px;
+}
+
+.section_main_head {
+    display: flex;
+    justify-content: row;
+
+}
+
+.section_main_head_menu ul {
+    display: flex;  
+    gap: 30px;              
+    list-style: none;      
+    padding: 0;
+    margin: 0;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+.section_main_head_menu a {
+    text-decoration: none;  
+    color: white;      
+    transition: 0.3s;      
+    font-size: 15px;
+    font-weight: 200px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.section_main_head_menu a:hover {
+    color: blue;           
+}
+
+.section_main_head_button_partner button{
+  background-color: transparent; 
+  border: 2px solid #dadada;
+  color: #ffffff; 
+  padding: 10px 20px;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.section_main_head_button_partner button:hover {
+    background-color: #dadada;
+    color: rgb(4, 4, 147);
+    font-weight: bold;;
+}
+
+.section_main_head_button_tickets button{
+  background-color: #ffbb00; 
+  border: 2px solid #ffbb00;
+  color: #ffffff; 
+  padding: 10px 20px;
+  margin-left: 50px;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.section_main_head_button_tickets button:hover {
+    background-color: #dadada;
+    color: rgb(4, 4, 147);
+    font-weight: bold;;
+}
+
+.section_main_lang {
+    margin-left: 50px;
+    margin-top:30px;
+}
+
+
+@media (max-width: 920px) {
+  .section_main_head_menu,
+  .section_main_head_button_partner,
+  .section_main_head_button_tickets,
+  .section_main_lang{
+    display: none;
+  }
+}
+@media (max-width: 1000px){
+    .section_main_head_logo {
+        flex-direction: row;
+        margin-left: 0px;
+        width: 100%;
+
+    }
+}
+
+
