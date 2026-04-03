@@ -1,3 +1,39 @@
+    // Переменные для блока
+$minWidth: 320px;
+$maxWidth: 1280px;
+$maxWidthCon: 1280px;
+$md1: $maxWidthCon;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+
+// Переменные для Цвета
+$black: #212121;
+$white: #ffffff;
+$main: #1c4ea4;
+$grey: #aeaeae;
+$footer: #03313b;
+$orange: #ffb202;
+
+// Основная сетка
+._container {
+  max-width: $maxWidthCon;
+  margin: 0 auto;
+  padding: 0px 20px;
+
+  @media (max-width: $md1) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+
 .section_forum {
     margin-top: 50px;
     background-color: rgb(2, 2, 74);
@@ -227,10 +263,10 @@
 }
   
 
-    
+
  
 
- body {
+ .section_main {
     background-image: url("./image/background.png");
  
 }
